@@ -59,8 +59,3 @@ hackYourForecast.lookup(cities).then(console.log);
 
 ISC
 
-<!-- // if timestamp wasn't specified, the current hour will be assumed
-// timestamp accepts the following:
-// + new Date()
-// + new Date(Tue Oct 9 2018 05:35:54 GMT+0200 (W. Europe Summer Time))
-// + Math.floor(new Date() / 1000) -->
