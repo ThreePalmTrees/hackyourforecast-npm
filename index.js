@@ -10,8 +10,8 @@ class HackYourForecast {
 
       userEntries = userEntries.filter(entry => {
         if (!entry.timestamp) {
-          const nowMilliseconds = Math.floor(new Date() / 1000);
-          entry.timestamp = nowMilliseconds;
+          const nowUXIN = Math.floor(new Date() / 1000);
+          entry.timestamp = nowUNIX;
         }
         const timeIsUNIX =
           new Date(entry.timestamp * 1000).getFullYear() < 9999;
