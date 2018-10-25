@@ -7,3 +7,5 @@ const cities = [
 ];
 
 hackYourForecast.lookup(cities).then(console.log);
+
+// development: use npm link to test the functionality or require from relative path
