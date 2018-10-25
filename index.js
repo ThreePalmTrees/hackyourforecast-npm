@@ -10,7 +10,7 @@ class HackYourForecast {
 
       userEntries = userEntries.filter(entry => {
         if (!entry.timestamp) {
-          const nowUXIN = Math.floor(new Date() / 1000);
+          const nowUNIX = Math.floor(new Date() / 1000);
           entry.timestamp = nowUNIX;
         }
         const timeIsUNIX =
