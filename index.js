@@ -1,5 +1,5 @@
-"use strict";
-const axios = require("axios");
+'use strict';
+const axios = require('axios');
 
 class HackYourForecast {
   async lookup(userEntries) {
@@ -43,14 +43,14 @@ class HackYourForecast {
 
   async queryBackend(requestArr) {
     const axiosInstance = axios.create({
-      baseURL: "http://localhost:5002",
+      baseURL: 'http://localhost:5002',
       timeout: 1000
     });
     const fetchedData = [];
 
     try {
       await axiosInstance
-        .post("/api/weather", { locations: requestArr })
+        .post('/api/weather', { locations: requestArr })
         .then(res => fetchedData.push(res.data));
     } catch (e) {
       console.error(e.message);
